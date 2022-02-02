@@ -13,6 +13,13 @@ public class MyController {
 	CommentDao dao1;
 	
 	@RequestMapping("Start")
+	public ModelAndView sayWelcome() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("Welcome");
+		return mv;
+	}
+	
+	@RequestMapping("Welcome")
 	public ModelAndView loadLandingPage() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("LandingPage");
