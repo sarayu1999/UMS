@@ -6,14 +6,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="comment")
+@Table(name="comments")
 public class Comment {
 	@Column(name="name")
 	private String name;
 	@Id
 	@Column(name="email")
 	private String email;
-	@Column(name="comment")
+	@Column(name="comments")
 	private String comment;
 	public String getName() {
 		return name;
